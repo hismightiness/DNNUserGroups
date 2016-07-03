@@ -1,0 +1,35 @@
+﻿BUGS:
+
+Choosing a region to search, then click Create Group: the country is remembered, but not the region.
+
+Manage User Group
+- Languages aren't pre-filled
+- Address field is not user-friendly
+- Culture code is not user-friendly
+- Click create > language error > shows an empty UG leader DDL
+- Add user username, click Add User > refreshes view and loses all entered information
+
+
+TASKS:
+
+Form patterns need to be updated to use any actual form pattern.
+
+Data provider files need to be moved to best practice location.
+
+Telerik controls need to be replaced with anything else.
+
+
+IDEATION:
+
+Initial page load should use geo location to determine the location of the visitor and show them UG's in their area without the need to search.
+
+Have a setting to show the most recently created user groups, or most recently updated UG's (events, meta data, new leader, etc.) on initial page load.  (Show all anyway?)
+
+Initial UG lists:
+- My UG's
+- UG's in my area
+- UG's recently updated (showing type of update(s))
+- UG's with upcoming meetings
+
+Country & Region DDL's should be pre-selected based upon geo location.
+

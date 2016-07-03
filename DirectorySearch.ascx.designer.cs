@@ -37,7 +37,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadComboBox rcbCountry;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnComboBox rcbCountry;
         
         /// <summary>
         /// divRegion control.
@@ -64,7 +64,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadComboBox rcbRegion;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnComboBox rcbRegion;
         
         /// <summary>
         /// divLanguage control.
@@ -91,7 +91,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadComboBox rcbLanguage;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnComboBox rcbLanguage;
         
         /// <summary>
         /// divAdmin control.
@@ -145,7 +145,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadGrid rgUserGroups;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnGrid rgUserGroups;
         
         /// <summary>
         /// litInstructions control.

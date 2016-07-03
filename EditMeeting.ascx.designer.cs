@@ -118,7 +118,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadDateTimePicker rdtMeetingDate;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnDateTimePicker rdtMeetingDate;
         
         /// <summary>
         /// dnnlblLocation control.
@@ -136,7 +136,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadTextBox rtLocation;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnTextBox rtLocation;
         
         /// <summary>
         /// cmdViewMap control.

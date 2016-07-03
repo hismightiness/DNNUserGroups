@@ -1,10 +1,12 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SendMessage.ascx.cs" Inherits="DotNetNuke.Modules.UserGroups.SendMessage" %>
 <%@ Register TagPrefix="dnn" TagName="label" Src="~/controls/LabelControl.ascx" %>
-<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+<%@ Register TagPrefix="dnn" Assembly="DotNetNuke" Namespace="DotNetNuke.UI.WebControls"%>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web" %>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web.Deprecated" %>
 <div class="SendMessage">
 	<div class="item-wrapper">
 		<dnn:label id="dnnlblSendTo" runat="server" controlname="rcbSendTo" suffix=":" CssClass="SubHead" />
-		<telerik:RadComboBox ID="rcbSendTo" runat="server" DataValueField="UserID" Width="254" CssClass="right" />
+		<dnn:DnnComboBox ID="rcbSendTo" runat="server" DataValueField="UserID" Width="254" CssClass="right" />
 	</div>
 	<div class="item-wrapper">
 		<dnn:label id="dnnlblSubject" runat="server" controlname="txtSubject" suffix=":" CssClass="SubHead" />

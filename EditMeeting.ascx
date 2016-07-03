@@ -1,6 +1,8 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="EditMeeting.ascx.cs" Inherits="DotNetNuke.Modules.UserGroups.EditMeeting" %>
 <%@ Register TagPrefix="dnn" TagName="label" Src="~/controls/LabelControl.ascx" %>
-<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+<%@ Register TagPrefix="dnn" Assembly="DotNetNuke" Namespace="DotNetNuke.UI.WebControls"%>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web" %>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web.Deprecated" %>
 <asp:Literal ID="litMapScript" runat="server" />
 <div class="EditMeeting">
 	<div id="divEventID" runat="server" visible="false">
@@ -20,11 +22,11 @@
 		</dd>
 		<dt><dnn:label id="dnnlblMeetingDate" runat="server" controlname="txtMeetingDate" suffix=":" CssClass="SubHead" /></dt>
 		<dd>
-			<telerik:RadDateTimePicker ID="rdtMeetingDate" runat="server" />
+			<dnn:DnnDateTimePicker ID="rdtMeetingDate" runat="server" />
 		</dd>
 		<dt><dnn:label id="dnnlblLocation" runat="server" controlname="rtLocation" suffix=":" CssClass="SubHead" /></dt>
 		<dd>
-			<telerik:RadTextBox TextMode="MultiLine" MaxLength="200" ID="rtLocation" runat="server" CssClass="NormalTextBox" Width="250px" Height="50px" />
+			<dnn:DnnTextBox TextMode="MultiLine" MaxLength="200" ID="rtLocation" runat="server" CssClass="NormalTextBox" Width="250px" Height="50px" />
 		</dd>
 		<dt></dt>
 		<dd>

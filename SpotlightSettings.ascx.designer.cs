@@ -28,7 +28,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadNumericTextBox rntxtMeetingMaxDayCount;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnNumericTextBox rntxtMeetingMaxDayCount;
         
         /// <summary>
         /// dnnlblRequireMeetingAddress control.
@@ -64,7 +64,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadComboBox rcbGroupPage;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnComboBox rcbGroupPage;
         
         /// <summary>
         /// dnnlblModule control.
@@ -82,7 +82,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadComboBox rcbModule;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnComboBox rcbModule;
         
         /// <summary>
         /// dnnlblTemplate control.
@@ -118,7 +118,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadNumericTextBox txtPageSize;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnNumericTextBox txtPageSize;
         
         /// <summary>
         /// lblWidgetHeight control.
@@ -136,7 +136,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadNumericTextBox txtWidgetHeight;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnNumericTextBox txtWidgetHeight;
         
         /// <summary>
         /// lblWidgetWidth control.
@@ -154,7 +154,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadNumericTextBox txtWidgetWidth;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnNumericTextBox txtWidgetWidth;
         
         /// <summary>
         /// lblItemHeight control.
@@ -172,7 +172,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadNumericTextBox txtItemHeight;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnNumericTextBox txtItemHeight;
         
         /// <summary>
         /// lblItemWidth control.
@@ -190,7 +190,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadNumericTextBox txtItemWidth;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnNumericTextBox txtItemWidth;
         
         /// <summary>
         /// lblFrameDuration control.
@@ -208,7 +208,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadNumericTextBox txtFrameDuration;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnNumericTextBox txtFrameDuration;
         
         /// <summary>
         /// lblScrollDuration control.
@@ -226,6 +226,6 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadNumericTextBox txtScrollDuration;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnNumericTextBox txtScrollDuration;
     }
 }

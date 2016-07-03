@@ -1,6 +1,8 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ManageGroup.ascx.cs" Inherits="DotNetNuke.Modules.UserGroups.ManageGroup" %>
 <%@ Register TagPrefix="dnn" TagName="label" Src="~/controls/LabelControl.ascx" %>
-<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+<%@ Register TagPrefix="dnn" Assembly="DotNetNuke" Namespace="DotNetNuke.UI.WebControls"%>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web" %>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web.Deprecated" %>
 <div class="ManageGroup">
 	<div class="leader-actions">
 		<asp:LinkButton ID="cmdManageUsers" runat="server" CssClass="CommandButton" resourcekey="cmdManageUsers" OnClick="CmdManageUsersClick" />
@@ -16,12 +18,12 @@
 	</div>
 	<div class="item-wrapper">
 		<dnn:label id="dnnlblCountry" runat="server" controlname="lblCountry" suffix=":" CssClass="SubHead" />
-		<telerik:RadComboBox ID="rcbCountry" runat="server" DataTextField="Text" DataValueField="Value" Width="254" AutoPostBack="true" OnSelectedIndexChanged="RcbCountrySelectedIndexChanged" CssClass="right" />
+		<dnn:DnnComboBox ID="rcbCountry" runat="server" DataTextField="Text" DataValueField="Value" Width="254" AutoPostBack="true" OnSelectedIndexChanged="RcbCountrySelectedIndexChanged" CssClass="right" />
 		<asp:TextBox ID="txtCountry" runat="server" CssClass="NormalTextBox right long" Visible="false" MaxLength="50" />
 	</div>
 	<div class="item-wrapper">
 		<dnn:label id="dnnlblRegion" runat="server" controlname="lblRegion" suffix=":" CssClass="SubHead" />
-		<telerik:RadComboBox ID="rcbRegion" runat="server" DataTextField="Text" DataValueField="Value" Width="254" CssClass="right" />
+		<dnn:DnnComboBox ID="rcbRegion" runat="server" DataTextField="Text" DataValueField="Value" Width="254" CssClass="right" />
 		<asp:TextBox ID="txtRegion" runat="server" CssClass="NormalTextBox right long" Visible="false" MaxLength="50" />
 	</div>
 	<div class="item-wrapper">
@@ -30,19 +32,19 @@
 	</div>
 	<div class="item-wrapper">
 		<dnn:label id="dnnlblLanguageID" runat="server" controlname="rcbLanguageID" suffix=":" CssClass="SubHead" />
-		<telerik:RadComboBox ID="rcbLanguageID" runat="server" DataTextField="Language" DataValueField="LanguageID" Width="254" CssClass="right" />
+		<dnn:DnnComboBox ID="rcbLanguageID" runat="server" DataTextField="Language" DataValueField="LanguageID" Width="254" CssClass="right" />
 	</div>
 	<div class="item-wrapper">
 		<dnn:label id="dnnlblMeetingAddy" runat="server" controlname="rtMeetingAddress" suffix=":" CssClass="SubHead" />
-		<telerik:RadTextBox TextMode="MultiLine" MaxLength="250" ID="rtMeetingAddress" runat="server" CssClass="NormalTextBox right long" Width="250px" />
+		<dnn:DnnTextBox TextMode="MultiLine" MaxLength="250" ID="rtMeetingAddress" runat="server" CssClass="NormalTextBox right long" Width="250px" />
 	</div>
 	<div class="item-wrapper" visible="false" runat="server" id="divLat">
 		<dnn:label id="dnnlblLatitude" runat="server" controlname="txtLatitude" suffix=":" CssClass="SubHead" />
-		<telerik:RadNumericTextBox ID="rntxtLatitude" runat="server" ShowSpinButtons="false" Width="250" CssClass="right" MinValue="-90" MaxValue="90" Type="Number" />
+		<dnn:DnnNumericTextBox ID="rntxtLatitude" runat="server" ShowSpinButtons="false" Width="250" CssClass="right" MinValue="-90" MaxValue="90" Type="Number" />
 	</div>	
 	<div class="item-wrapper" visible="false" runat="server" id="divLong">
 		<dnn:label id="dnnlblLongitude" runat="server" controlname="txtLongitude" suffix=":" CssClass="SubHead" />
-		<telerik:RadNumericTextBox ID="rntxtLongitude" runat="server" ShowSpinButtons="false" Width="250" CssClass="right" MinValue="-180" MaxValue="180" Type="Number" />
+		<dnn:DnnNumericTextBox ID="rntxtLongitude" runat="server" ShowSpinButtons="false" Width="250" CssClass="right" MinValue="-180" MaxValue="180" Type="Number" />
 	</div>	
 	<div class="item-wrapper">
 		<dnn:label id="dnnlblUrl" runat="server" controlname="txtUrl" suffix=":" CssClass="SubHead" />
@@ -70,7 +72,7 @@
 	</div>
 	<div class="item-wrapper">
 		<dnn:label id="dnnlblAbout" runat="server" controlname="rtAbout" suffix=":" CssClass="SubHead" />
-		<telerik:RadTextBox TextMode="MultiLine" MaxLength="200" ID="rtAbout" runat="server" CssClass="NormalTextBox right long narrow" Width="250px" />
+		<dnn:DnnTextBox TextMode="MultiLine" MaxLength="200" ID="rtAbout" runat="server" CssClass="NormalTextBox right long narrow" Width="250px" />
 	</div>
 	<div class="item-wrapper">
 		<dnn:label id="dnnlblDefaultLanguage" runat="server" controlname="txtFlag" suffix=":" CssClass="SubHead" />
@@ -82,7 +84,7 @@
 	</div>
 	<div id="divLeader" runat="server" class="item-wrapper">
 		<dnn:label id="dnnlblLeaderID" runat="server" controlname="rcbLeaderID" suffix=":" CssClass="SubHead" />
-		<telerik:RadComboBox ID="rcbLeaderID" runat="server" DataTextField="Username" DataValueField="UserID" Width="254" CssClass="right" />
+		<dnn:DnnComboBox ID="rcbLeaderID" runat="server" DataTextField="Username" DataValueField="UserID" Width="254" CssClass="right" />
 		<asp:TextBox ID="txtLeaderID" runat="server" Visible="false" />
 		<asp:TextBox ID="txtLeaderUsername" runat="server" CssClass="NormalTextBox right long" MaxLength="200" />
 		<asp:LinkButton ID="cmdAdd" runat="server" CssClass="CommandButton right" resourcekey="cmdAdd" OnClick="CmdAddUserClick" />

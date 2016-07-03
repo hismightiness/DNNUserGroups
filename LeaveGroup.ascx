@@ -1,5 +1,7 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="LeaveGroup.ascx.cs" Inherits="DotNetNuke.Modules.UserGroups.LeaveGroup" %>
-<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+<%@ Register TagPrefix="dnn" Assembly="DotNetNuke" Namespace="DotNetNuke.UI.WebControls"%>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web" %>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web.Deprecated" %>
 <div class="LeaveGroup">
 	<div class="item-wrapper">
 		<asp:Label ID="lblMember" runat="server" CssClass="SubHead left med" resourcekey="lblMember" />
@@ -11,11 +13,11 @@
 	</div>
 	<div class="item-wrapper">
 		<asp:Label ID="lblReason" runat="server" CssClass="SubHead left med" resourcekey="lblReason" />
-		<telerik:RadComboBox ID="rcbReason" runat="server" DataTextField="Reason" DataValueField="ReasonID" Width="254" AutoPostBack="true" OnSelectedIndexChanged="RcbReasonSelectedIndexChanged" CssClass="right long" />
+		<dnn:DnnComboBox ID="rcbReason" runat="server" DataTextField="Reason" DataValueField="ReasonID" Width="254" AutoPostBack="true" OnSelectedIndexChanged="RcbReasonSelectedIndexChanged" CssClass="right long" />
 	</div>
 	<div class="item-wrapper" runat="server" id="divReasonOther" visible="false">
 		<asp:Label ID="lblReasonOther" runat="server" CssClass="SubHead left med" resourcekey="rtReasonOther" />
-		<telerik:RadTextBox TextMode="MultiLine" MaxLength="250" ID="rtReasonOther" runat="server" CssClass="NormalTextBox right long narrow" Width="250px" />
+		<dnn:DnnTextBox TextMode="MultiLine" MaxLength="250" ID="rtReasonOther" runat="server" CssClass="NormalTextBox right long narrow" Width="250px" />
 	</div>
 	<div class="messages"><asp:Label ID="lblMsg" runat="server" CssClass="NormalRed" /></div>
 	<div class="action-btns">

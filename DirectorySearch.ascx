@@ -1,18 +1,21 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="DirectorySearch.ascx.cs" Inherits="DotNetNuke.Modules.UserGroups.DirectorySearch" %>
-<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+<%@ Register TagPrefix="dnn" TagName="Label" Src="~/controls/LabelControl.ascx" %>
+<%@ Register TagPrefix="dnn" Assembly="DotNetNuke" Namespace="DotNetNuke.UI.WebControls"%>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web" %>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web.Deprecated" %>
 <div class="DirectorySearch">
 	<div id="div-filters">
 		<div id="divCountry" runat="server" class="left">
 			<asp:Label ID="lblCountry" runat="server" resourcekey="lblCountry" CssClass="SubHead" />
-			<telerik:RadComboBox ID="rcbCountry" runat="server" DataTextField="Text" DataValueField="Value" Width="200" AutoPostBack="true" OnSelectedIndexChanged="RcbCountrySelectedIndexChanged" />
+			<dnn:DnnComboBox ID="rcbCountry" runat="server" DataTextField="Text" DataValueField="Value" Width="200" AutoPostBack="true" OnSelectedIndexChanged="RcbCountrySelectedIndexChanged" />
 		</div>
 		<div id="divRegion" runat="server" class="right">
 			<asp:Label ID="lblRegion" runat="server" resourcekey="lblRegion" CssClass="SubHead" />
-			<telerik:RadComboBox ID="rcbRegion" runat="server" DataTextField="Text" DataValueField="Value" Width="200" AutoPostBack="true" OnSelectedIndexChanged="RcbRegionSelectedIndexChanged" />
+			<dnn:DnnComboBox ID="rcbRegion" runat="server" DataTextField="Text" DataValueField="Value" Width="200" AutoPostBack="true" OnSelectedIndexChanged="RcbRegionSelectedIndexChanged" />
 		</div>
 		<div id="divLanguage" runat="server" class="right">
 			<asp:Label ID="lblLanguage" runat="server" resourcekey="lblLanguage" CssClass="SubHead" />
-			<telerik:RadComboBox ID="rcbLanguage" runat="server" DataTextField="Language" DataValueField="LanguageID" Width="200" AutoPostBack="true" OnSelectedIndexChanged="RcbLanguageSelectedIndexChanged" />
+			<dnn:DnnComboBox ID="rcbLanguage" runat="server" DataTextField="Language" DataValueField="LanguageID" Width="200" AutoPostBack="true" OnSelectedIndexChanged="RcbLanguageSelectedIndexChanged" />
 		</div>
 	</div>
 	<div id="divAdmin" runat="server" class="div-admin">
@@ -29,21 +32,21 @@
 		</div>
 	</div>
 	<div id="div-grid">
-		<telerik:RadGrid ID="rgUserGroups" runat="server" AutoGenerateColumns="false" GridLines="None" Width="620px" OnItemDataBound="RgUserGroupsItemDataBound" OnItemCommand="RgUserGroupsItemCommand" >
+		<dnn:DnnGrid ID="rgUserGroups" runat="server" AutoGenerateColumns="false" GridLines="None" Width="620px" OnItemDataBound="RgUserGroupsItemDataBound" OnItemCommand="RgUserGroupsItemCommand" >
 			<ClientSettings AllowColumnsReorder="false" EnableRowHoverStyle="false">
 			</ClientSettings>
 			<MasterTableView DataKeyNames="UserGroupID,LeaderID,LeaderUsername,LeaderDisplayName" AllowNaturalSort="false">
 				<Columns>
-					<telerik:GridButtonColumn UniqueName="EditItem" CommandName="EditItem" ButtonType="ImageButton" ImageUrl="~/images/edit.gif" HeaderStyle-Width="26px" ItemStyle-Width="26px" />
-					<telerik:GridHyperLinkColumn UniqueName="Name" HeaderText="Name" HeaderStyle-HorizontalAlign="Left" ItemStyle-HorizontalAlign="Left" Target="_blank" DataTextField="Name" />
-					<telerik:GridBoundColumn UniqueName="City" HeaderText="City" DataField="City" HeaderStyle-HorizontalAlign="Left" ItemStyle-HorizontalAlign="Left" />
-					<telerik:GridBoundColumn UniqueName="Members" HeaderText="Members" DataField="Members" HeaderStyle-Width="32px" ItemStyle-Width="32px" />
-					<telerik:GridHyperLinkColumn UniqueName="Leader" HeaderText="Leader" HeaderStyle-HorizontalAlign="Left" ItemStyle-HorizontalAlign="Left" Target="_blank" />
-					<telerik:GridHyperLinkColumn UniqueName="Join" HeaderStyle-HorizontalAlign="Left" ItemStyle-HorizontalAlign="Left" />
-					<telerik:GridCheckBoxColumn UniqueName="Active" HeaderText="Active" DataField="Active"  HeaderStyle-Width="32px" ItemStyle-Width="32px" /> 
+					<dnn:DnnGridButtonColumn UniqueName="EditItem" CommandName="EditItem" ButtonType="ImageButton" ImageUrl="~/images/edit.gif" HeaderStyle-Width="26px" ItemStyle-Width="26px" />
+					<dnn:DnnGridHyperLinkColumn UniqueName="Name" HeaderText="Name" HeaderStyle-HorizontalAlign="Left" ItemStyle-HorizontalAlign="Left" Target="_blank" DataTextField="Name" />
+					<dnn:DnnGridBoundColumn UniqueName="City" HeaderText="City" DataField="City" HeaderStyle-HorizontalAlign="Left" ItemStyle-HorizontalAlign="Left" />
+					<dnn:DnnGridBoundColumn UniqueName="Members" HeaderText="Members" DataField="Members" HeaderStyle-Width="32px" ItemStyle-Width="32px" />
+					<dnn:DnnGridHyperLinkColumn UniqueName="Leader" HeaderText="Leader" HeaderStyle-HorizontalAlign="Left" ItemStyle-HorizontalAlign="Left" Target="_blank" />
+					<dnn:DnnGridHyperLinkColumn UniqueName="Join" HeaderStyle-HorizontalAlign="Left" ItemStyle-HorizontalAlign="Left" />
+					<dnn:DnnGridCheckBoxColumn UniqueName="Active" HeaderText="Active" DataField="Active"  HeaderStyle-Width="32px" ItemStyle-Width="32px" /> 
 				</Columns>
 			</MasterTableView>
-		</telerik:RadGrid>
+		</dnn:DnnGrid>
 	</div>
 	<div class="instructions">
 		<asp:Literal ID="litInstructions" runat="server" />

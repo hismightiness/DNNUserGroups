@@ -1,6 +1,5 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ContactOfficers.ascx.cs" Inherits="DotNetNuke.Modules.UserGroups.ContactOfficers" %>
 <%@ Register TagPrefix="dnn" TagName="label" Src="~/controls/LabelControl.ascx" %>
-<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
 <div class="ContactOfficers">
 	<div class="item-wrapper" id="divID" visible="false" runat="server">
 		<asp:TextBox ID="txtGroupID" runat="server" />

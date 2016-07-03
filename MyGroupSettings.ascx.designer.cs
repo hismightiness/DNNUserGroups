@@ -28,7 +28,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadComboBox rcbGroupPage;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnComboBox rcbGroupPage;
         
         /// <summary>
         /// dnnlblModule control.
@@ -46,7 +46,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadComboBox rcbModule;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnComboBox rcbModule;
         
         /// <summary>
         /// dnnlblJoinTemplate control.

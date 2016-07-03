@@ -1,15 +1,17 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MyGroupSettings.ascx.cs" Inherits="DotNetNuke.Modules.UserGroups.MyGroupSettings" %>
 <%@ Register TagPrefix="dnn" TagName="label" Src="~/controls/LabelControl.ascx" %>
-<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+<%@ Register TagPrefix="dnn" Assembly="DotNetNuke" Namespace="DotNetNuke.UI.WebControls"%>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web" %>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web.Deprecated" %>
 <div class="Settings">
 	<dl>
 		<dt><dnn:label id="dnnlblGroupPage" runat="server" controlname="rcbGroupPage" suffix=":" CssClass="SubHead" /></dt>
 		<dd>
-			<telerik:RadComboBox id="rcbGroupPage" runat="server" Width="254px" DataTextField="IndentedTabName" DataValueField="TabId" AutoPostBack="true" OnSelectedIndexChanged="RcbGroupPageSelectedIndexChanged" />
+			<dnn:DnnComboBox id="rcbGroupPage" runat="server" Width="254px" DataTextField="IndentedTabName" DataValueField="TabId" AutoPostBack="true" OnSelectedIndexChanged="RcbGroupPageSelectedIndexChanged" />
 		</dd>
 		<dt><dnn:label id="dnnlblModule" runat="server" controlname="rcbModule" suffix=":" CssClass="SubHead" /></dt>
 		<dd>
-			<telerik:RadComboBox id="rcbModule" runat="server" Width="254px" DataTextField="ModuleName" DataValueField="ModuleId" />
+			<dnn:DnnComboBox id="rcbModule" runat="server" Width="254px" DataTextField="ModuleName" DataValueField="ModuleId" />
 		</dd>
 		<dt><dnn:label id="dnnlblJoinTemplate" runat="server" controlname="txtJoinTemplate" suffix=":" CssClass="SubHead" /></dt>
 		<dd>

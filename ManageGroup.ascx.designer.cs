@@ -91,7 +91,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadComboBox rcbCountry;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnComboBox rcbCountry;
         
         /// <summary>
         /// txtCountry control.
@@ -118,7 +118,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadComboBox rcbRegion;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnComboBox rcbRegion;
         
         /// <summary>
         /// txtRegion control.
@@ -163,7 +163,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadComboBox rcbLanguageID;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnComboBox rcbLanguageID;
         
         /// <summary>
         /// dnnlblMeetingAddy control.
@@ -181,7 +181,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadTextBox rtMeetingAddress;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnTextBox rtMeetingAddress;
         
         /// <summary>
         /// divLat control.
@@ -208,7 +208,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadNumericTextBox rntxtLatitude;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnNumericTextBox rntxtLatitude;
         
         /// <summary>
         /// divLong control.
@@ -235,7 +235,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadNumericTextBox rntxtLongitude;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnNumericTextBox rntxtLongitude;
         
         /// <summary>
         /// dnnlblUrl control.
@@ -379,7 +379,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadTextBox rtAbout;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnTextBox rtAbout;
         
         /// <summary>
         /// dnnlblDefaultLanguage control.
@@ -451,7 +451,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadComboBox rcbLeaderID;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnComboBox rcbLeaderID;
         
         /// <summary>
         /// txtLeaderID control.

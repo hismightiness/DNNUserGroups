@@ -64,7 +64,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadNumericTextBox rntxtMinGroupSize;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnNumericTextBox rntxtMinGroupSize;
         
         /// <summary>
         /// dnnlblPublishMeetings control.
@@ -136,7 +136,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadNumericTextBox rntxtPageSize;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnNumericTextBox rntxtPageSize;
         
         /// <summary>
         /// dnnlblNameFormat control.
@@ -154,7 +154,7 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadComboBox rcbNameFormat;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnComboBox rcbNameFormat;
         
         /// <summary>
         /// dnnlblCountrySelect control.
@@ -244,6 +244,6 @@ namespace DotNetNuke.Modules.UserGroups {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadComboBox rcbProfileProperty;
+        protected global::DotNetNuke.Web.UI.WebControls.DnnComboBox rcbProfileProperty;
     }
 }
